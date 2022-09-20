@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (6주차 과제.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  h3.cpp
+C:\Users\minje\Desktop\C언어\C_coding\6주차 과제\h3.cpp(17,9): warning C4129: '(': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+C:\Users\minje\Desktop\C언어\C_coding\6주차 과제\h3.cpp(17,9): warning C4129: ')': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+C:\Users\minje\Desktop\C언어\C_coding\6주차 과제\h3.cpp(27,9): warning C4129: '(': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+C:\Users\minje\Desktop\C언어\C_coding\6주차 과제\h3.cpp(27,9): warning C4129: ')': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+C:\Users\minje\Desktop\C언어\C_coding\6주차 과제\h3.cpp(37,9): warning C4129: '(': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+C:\Users\minje\Desktop\C언어\C_coding\6주차 과제\h3.cpp(37,9): warning C4129: ')': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
+  6주차 과제.vcxproj -> C:\Users\minje\Desktop\C언어\C_coding\6주차 과제\Debug\7주차 과제.exe
