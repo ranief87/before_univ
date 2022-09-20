@@ -1,0 +1,41 @@
+<html>
+    <head><title>4주차 1번</title>
+        <style type = "text/css">
+        div { float : left; margin : 10px; width : 260px; height : 90px; border : 1px solid gray; padding:10px;}
+        .fruit {width:80px;height:80px;}
+        </style>
+    </head>
+    <body>
+        <script type = "text/javascript">
+        function dragover(fevent) 
+        {fevent.preventDefault();}
+        function dragstart(fevent) 
+        {fevent.dataTransfer.effectAllowed ='move';
+        fevent.dataTransfer.setData("Text",fevent.target.id);}
+        function dragend(fevent)
+        {fevent.dataTransfer.clearData("Text");}
+        function drop(fevent)
+        {fevent.preventDefault();
+        var item = fevent.dataTransfer.getData("Text");
+        fevent.target.appendChild(document.getElementById(item));
+        var moved ="";
+        if (item == "item1") moved = "사과";
+        if (item == "item2") moved = "포도";
+        if (item == "item3") moved = "체리";
+        var str = moved + "를 옮겼습니다.";
+        document.getElementById("status").innerHTML = str;
+        fevent.stopPropagation();}
+        </script>
+        <h2>과일 목록</h2>
+        <div id = "div1" ondrop = "drop(event)" ondragover ="dragover(event)">
+            <img class = "fruit" id = "item1" src = "apple.jpg" draggable ="true" ondragstart = "dragstart(event)" ondragend ="dragend(event)">
+            <img class = "fruit" id = "item2" src = "grape.jpg" draggable ="true" ondragstart = "dragstart(event)" ondragend ="dragend(event)">
+            <img class = "fruit" id = "item3" src = "cherry.jpg" draggable ="true" ondragstart = "dragstart(event)" ondragend ="dragend(event)">
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <h2>장바구니</h2>
+        <div id ="div2" ondrop = "drop(event)" ondragover = "dragover(event)" ></div>
+        <br><br><br><br><br><br><br>
+        <h4 id = "status"></h4>
+    </body>
+</html>

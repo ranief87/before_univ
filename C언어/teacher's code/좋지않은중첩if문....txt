@@ -1,0 +1,79 @@
+//중첩if
+//1)코드가 많고, 중복이 되서 좋진 X
+/*
+#include <stdio.h>
+void main() {
+	int n;
+	printf("정수값: "); scanf_s("%d", &n);
+	if (n % 3 == 0) {
+		if (n % 5 == 0) {
+			printf("%d는 3과 5의 배수다.\n", n);
+		}
+		else {
+			printf("%d는 3의 배수다.\n", n);
+		}
+	}
+	if (n % 5 == 0) {
+		if (n % 3 == 0) {
+			printf("%d는 3과 5의 배수다.\n", n);
+		}
+		else {
+			printf("%d는 5의 배수다.\n", n);
+		}
+	}
+	if (n % 3 != 0 && n % 5 != 0) {
+		printf("%d는 5의 배수도 3의 배수도 아니다.\n", n);
+	}
+}
+*/
+
+/*
+//2)좋진 X(else문이 복잡해짐)
+#include <stdio.h>
+void main() {
+	int n;
+	printf("정수값: "); scanf_s("%d", &n);
+
+	if (n % 3 != 0 && n % 5 != 0) {
+		printf("%d는 5의 배수도 3의 배수도 아니다.\n", n);
+	}
+	else {   //n % 3 == 0 || n % 5 == 0
+		if (n % 3 == 0) {
+			if (n % 5 == 0) {
+				printf("%d는 3과 5의 배수다.\n", n);
+			}
+			else {
+				printf("%d는 3의 배수다.\n", n);
+			}
+		}
+		if (n % 5 == 0 && n % 3 != 0) {
+			printf("%d는 5의 배수다.\n", n);
+		}
+	}
+
+}
+*/
+
+//3)중첩if문 (단, else문은 되도록이면 조건식이 없는 것이 좋다.)
+#include <stdio.h>
+void main() {
+	int n;
+	printf("정수값: "); scanf_s("%d", &n);
+
+	if (n % 3 == 0) {
+		if (n % 5 == 0) {
+			printf("%d는 3과 5의 배수다.\n", n);
+		}
+		else {
+			printf("%d는 3의 배수다.\n", n);
+		}
+	}
+	else {    //n % 3 != 0
+		if (n % 5 == 0) {
+			printf("%d는 5의 배수다.\n", n);
+		}
+		else {
+			printf("%d는 5의 배수도 3의 배수도 아니다.\n", n);
+		}
+	}
+}
