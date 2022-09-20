@@ -1,0 +1,67 @@
+#햄버거 레시피 문제
+#Ham 라는 클래스를 만들어서 작업 합니다
+#클래스 안에서는 __init__ 만들어서 사용자에게 고기,야채,빵의 종류를 입력 받습니다
+#미리 조합된 레시피가 있는데 사용자가 불고기,양상추,밀가루빵 이라고 입력하면
+#불고기 버거 레시피 입니다! 라는 문구가 나와야 합니다
+
+# 레시피
+# 불고기,양상추,밀가루빵 --> 불고기 버거
+# 치킨,양배추,밀가루빵 -- > 치킨버거
+# 베이컨,토마토,밥 --> 밥버거
+
+# class Ham :
+#     def __init__(self):
+#         self.meet = input("어떤 고기를 사용 하시나요 ? :")
+#         self.veget = input("어떤 야채를 사용 하시나요 ? :")
+#         self.bread = input("어떤 빵을 사용 하시나요 ? :")
+#     def recipe(self) :
+#         if self.meet == "불고기" and self.veget == "양상추" and self.bread == "밀가루빵":
+#             print("불고기 버거를 만들 수 있습니다!")
+#         elif self.meet == "치킨" and self.veget == "양배추" and self.bread == "밀가루빵":
+#             print("치킨버거를 만들 수 있습니다!")
+#         elif self.meet == "베이컨" and self.veget == "토미토" and self.bread == "밥":
+#             print("밥버거를 만들 수 있습니다!")
+# Ham1 = Ham()
+# Ham1.recipe()
+# Ham2= Ham()
+# Ham2.recipe()
+
+
+
+#2)전사1,적1 객체를 만들어서
+#전사의 체력과 공격력은 100,20 입니다
+#적의 체력과 공격력은 100,10
+
+#턴제 방식으로 진행하며 아래 두가지 진행 방식이 있습니다
+#1.공격
+#2.방어
+#공격을 하게 되면 내 공격력 만큼 적에 체력을 깎을수 있고
+#내 체력도 상대 공격력 만큼 소모 합니다
+
+#방어는 상대방 공격력의 절반만큼의 체력만 깎입니다
+
+#최종적으로 적체력이 0이하로 떨어지면 됩니다.
+
+# class Character():
+#     def __init__(self,heal,att):
+#         self.heal = heal
+#         self.att = att
+#     def attack(self) :
+#         self.heal = self.heal- enemy.att
+#         enemy.heal = enemy.heal - self.att
+#     def defend(self) :
+#         self.heal = self.heal - enemy.att//2
+# warrior = Character(100,20)
+# enemy = Character(100,10)
+# while enemy.heal > 0 and warrior.heal > 0 :
+#     print("1. 공격")
+#     print("2. 방어")
+#     choi = int(input("행동을 선택하세여 : "))
+#     if choi == 1 :
+#         warrior.attack()
+#         print("내 체력 : {}".format(warrior.heal))
+#         print("적 체력 : {}".format(enemy.heal))
+#     elif choi == 2 :
+#         warrior.defend()
+#         print("내 체력 : {}".format(warrior.heal))
+#         print("적 체력 : {}".format(enemy.heal))

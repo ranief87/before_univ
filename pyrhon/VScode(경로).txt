@@ -1,0 +1,16 @@
+#경로 설정 방법: vscode를 실행 - 파일 - 설정(기본설정 또는 Preference)-	1)사용자 설정 또는 작업 영역에 밑에 코드 추가
+								2)확장-Python-settings.json에 밑에 코드 추가
+
+{
+"editor.fontSize": 20,
+"code-runner.saveFileBeforeRun": true,
+"code-runner.runInTerminal": true,
+"python.linting.enabled": false,
+"python.pythonPath": "C:\\Program Files\\Python\\Python365",
+"window.zoomLevel": 0,
+"terminal.integrated.fontSize": 30,
+"terminal.integrated.enableBold": true,
+"terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe",
+"git.ignoreMissingGitWarning": true,
+"files.autoSave": "afterDelay"
+}
