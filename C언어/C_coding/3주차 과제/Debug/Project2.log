@@ -1,0 +1,3 @@
+﻿  과제3.cpp
+C:\Users\minje\source\repos\Project2\과제3.cpp(49,11): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+  Project2.vcxproj -> C:\Users\minje\source\repos\Project2\Debug\Project2.exe
